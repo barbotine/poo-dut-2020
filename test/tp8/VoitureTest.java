@@ -64,9 +64,10 @@ public class VoitureTest {
     public void testSetConducteur() {
         System.out.println("setConducteur");
         Personne conducteur = driver;
+        
         car.setConducteur(conducteur);
         // TODO review the generated test code and remove the default call to fail.
-        fail("The test case is a prototype.");
+        
     }
 
     /**
@@ -75,12 +76,12 @@ public class VoitureTest {
     @Test
     public void testGetMarque() {
         System.out.println("getMarque");
-        Voiture instance = null;
-        String expResult = "";
-        String result = instance.getMarque();
+        Voiture instance = car; 
+        String expResult = "Citroen";
+        String result = car.getMarque();
         assertEquals(expResult, result);
         // TODO review the generated test code and remove the default call to fail.
-        fail("The test case is a prototype.");
+        
     }
 
     /**
@@ -89,12 +90,12 @@ public class VoitureTest {
     @Test
     public void testGetModele() {
         System.out.println("getModele");
-        Voiture instance = null;
-        String expResult = "";
+        Voiture instance = car;
+        String expResult = "DS5";
         String result = instance.getModele();
         assertEquals(expResult, result);
         // TODO review the generated test code and remove the default call to fail.
-        fail("The test case is a prototype.");
+        
     }
 
     /**
@@ -103,12 +104,12 @@ public class VoitureTest {
     @Test
     public void testGetImmatriculation() {
         System.out.println("getImmatriculation");
-        Voiture instance = null;
-        String expResult = "";
+        Voiture instance = car;
+        String expResult = "AX4532QW";
         String result = instance.getImmatriculation();
         assertEquals(expResult, result);
         // TODO review the generated test code and remove the default call to fail.
-        fail("The test case is a prototype.");
+        
     }
 
     /**
@@ -117,12 +118,12 @@ public class VoitureTest {
     @Test
     public void testGetVitesseActuelle() {
         System.out.println("getVitesseActuelle");
-        Voiture instance = null;
+        Voiture instance = car;
         int expResult = 0;
         int result = instance.getVitesseActuelle();
         assertEquals(expResult, result);
         // TODO review the generated test code and remove the default call to fail.
-        fail("The test case is a prototype.");
+        
     }
 
     /**
@@ -131,12 +132,11 @@ public class VoitureTest {
     @Test
     public void testGetNombreKm() {
         System.out.println("getNombreKm");
-        Voiture instance = null;
+        Voiture instance = car;
         int expResult = 0;
         int result = instance.getNombreKm();
         assertEquals(expResult, result);
-        // TODO review the generated test code and remove the default call to fail.
-        fail("The test case is a prototype.");
+        
     }
 
     /**
@@ -145,7 +145,7 @@ public class VoitureTest {
     @Test
     public void testGetVitesseMax() {
         System.out.println("getVitesseMax");
-        Voiture instance = null;
+        Voiture instance = car;
         int expResult = 0;
         int result = instance.getVitesseMax();
         assertEquals(expResult, result);
@@ -157,9 +157,9 @@ public class VoitureTest {
      * Test of demarrer method, of class Voiture.
      */
     @Test
-    public void testDemarrer() throws Exception {
+    public void testDemarrer() throws EtatIncorrectException, ViolationContrainteException {
         System.out.println("demarrer");
-        Voiture instance = null;
+        Voiture instance = car;
         instance.demarrer();
         // TODO review the generated test code and remove the default call to fail.
         fail("The test case is a prototype.");
@@ -169,9 +169,9 @@ public class VoitureTest {
      * Test of arreter method, of class Voiture.
      */
     @Test
-    public void testArreter() throws Exception {
+    public void testArreter() throws EtatIncorrectException {
         System.out.println("arreter");
-        Voiture instance = null;
+        Voiture instance = car;
         instance.arreter();
         // TODO review the generated test code and remove the default call to fail.
         fail("The test case is a prototype.");
@@ -201,7 +201,7 @@ public class VoitureTest {
         car.monterConducteur(driver);
         car.demarrer();
         car.freiner();
-        assertEquals()
+        
         // TODO review the generated test code and remove the default call to fail.
         fail("The test case is a prototype.");
     }
@@ -210,7 +210,7 @@ public class VoitureTest {
      * Test of rouler method, of class Voiture.
      */
     @Test
-    public void testRouler() throws Exception {
+    public void testRouler() throws EtatIncorrectException {
         System.out.println("rouler");
         
         int nombreHeure = 2;
@@ -224,10 +224,10 @@ public class VoitureTest {
      * Test of monterConducteur method, of class Voiture.
      */
     @Test
-    public void testMonterConducteur() throws Exception {
+    public void testMonterConducteur() throws EtatIncorrectException {
         System.out.println("monterConducteur");
-        Personne conducteur = null;
-        Voiture instance = null;
+        Personne conducteur = driver;
+        Voiture instance = car;
         instance.monterConducteur(conducteur);
         // TODO review the generated test code and remove the default call to fail.
         fail("The test case is a prototype.");
@@ -237,10 +237,10 @@ public class VoitureTest {
      * Test of monter method, of class Voiture.
      */
     @Test
-    public void testMonter() throws Exception {
+    public void testMonter() throws ViolationContrainteException, EtatIncorrectException {
         System.out.println("monter");
-        Personne passager = null;
-        Voiture instance = null;
+        Personne passager = driver;
+        Voiture instance = car;
         instance.monter(passager);
         // TODO review the generated test code and remove the default call to fail.
         fail("The test case is a prototype.");
@@ -250,10 +250,10 @@ public class VoitureTest {
      * Test of descendre method, of class Voiture.
      */
     @Test
-    public void testDescendre() throws Exception {
+    public void testDescendre() throws ViolationContrainteException, EtatIncorrectException {
         System.out.println("descendre");
-        Personne passager = null;
-        Voiture instance = null;
+        Personne passager = driver;
+        Voiture instance = car;
         instance.descendre(passager);
         // TODO review the generated test code and remove the default call to fail.
         fail("The test case is a prototype.");

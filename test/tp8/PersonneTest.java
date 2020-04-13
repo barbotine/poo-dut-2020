@@ -46,7 +46,7 @@ public class PersonneTest {
     @Test
     public void testHashCode() {
         System.out.println("hashCode");
-        Personne instance = null;
+        Personne instance = conducteur;
         int expResult = 0;
         int result = instance.hashCode();
         assertEquals(expResult, result);
