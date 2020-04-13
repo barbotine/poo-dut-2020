@@ -5,38 +5,34 @@
  */
 package tp8;
 
-import org.junit.jupiter.api.AfterEach;
-import org.junit.jupiter.api.AfterAll;
-import org.junit.jupiter.api.BeforeEach;
-import org.junit.jupiter.api.BeforeAll;
-import org.junit.jupiter.api.Test;
-import static org.junit.jupiter.api.Assertions.*;
+
+import static org.junit.Assert.*;
+import junit.framework.JUnit4TestAdapter;
+import org.junit.After;
+import org.junit.Before;
+import org.junit.Test;
 
 /**
  *
  * @author florie
  */
+
 public class PersonneTest {
     
-    Personne conducteur; 
+    Personne conducteur;
+    
+    // Personne conducteur; 
     public PersonneTest() {
     }
     
-    @BeforeAll
-    public static void setUpClass() {
-    }
-    
-    @AfterAll
-    public static void tearDownClass() {
-    }
-    
-    @BeforeEach
+    @Before
     public void setUp() {
         
+        System.out.println("setUp");
         conducteur = new Personne("Dupont", "Michel", 180, 80.0); 
     }
     
-    @AfterEach
+    @After
     public void tearDown() {
     }
 
@@ -68,8 +64,4 @@ public class PersonneTest {
         // TODO review the generated test code and remove the default call to fail.
         fail("The test case is a prototype.");
     }
-    
-    
-    
-    
 }

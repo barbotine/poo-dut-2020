@@ -5,40 +5,33 @@
  */
 package tp8;
 
-import org.junit.jupiter.api.AfterEach;
-import org.junit.jupiter.api.AfterAll;
-import org.junit.jupiter.api.BeforeEach;
-import org.junit.jupiter.api.BeforeAll;
-import org.junit.jupiter.api.Test;
-import static org.junit.jupiter.api.Assertions.*;
+import static org.junit.Assert.*;
+import junit.framework.JUnit4TestAdapter;
+import org.junit.After;
+import org.junit.Before;
+import org.junit.Test;
+
 
 /**
  *
  * @author florie
  */
 public class VoitureTest {
-    Voiture car; 
+    tp8.Voiture car; 
     Personne driver; 
     
     public VoitureTest() {
     }
     
-    @BeforeAll
-    public static void setUpClass() {
-    }
-    
-    @AfterAll
-    public static void tearDownClass() {
-    }
-    
-    @BeforeEach
+   
+    @Before
     public void setUp() {
         car = new Voiture("Citroën", "DS5", "AX4532QW", 5, 200.0); 
         driver = new Personne("Dupont", "Michel", 180, 80.0); 
         car.setConducteur(driver); 
     }
     
-    @AfterEach
+    @After
     public void tearDown() {
         car = null; 
         driver = null;  

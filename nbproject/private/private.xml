@@ -3,14 +3,10 @@
     <editor-bookmarks xmlns="http://www.netbeans.org/ns/editor-bookmarks/2" lastBookmarkId="0"/>
     <open-files xmlns="http://www.netbeans.org/ns/projectui-open-files/2">
         <group>
-            <file>file:/D:/dut_2019_2020/Git/POO_florieanne_barbot/tp8/src/tp8/Tp8.java</file>
-            <file>file:/D:/dut_2019_2020/Git/POO_florieanne_barbot/tp8/src/tp8/EtatVoiture.java</file>
-            <file>file:/D:/dut_2019_2020/Git/POO_florieanne_barbot/tp8/test/tp8/VoitureTest.java</file>
-            <file>file:/D:/dut_2019_2020/Git/POO_florieanne_barbot/tp8/src/tp8/ViolationContrainteException.java</file>
-            <file>file:/D:/dut_2019_2020/Git/POO_florieanne_barbot/tp8/src/tp8/Personne.java</file>
-            <file>file:/D:/dut_2019_2020/Git/POO_florieanne_barbot/tp8/src/tp8/Voiture.java</file>
-            <file>file:/D:/dut_2019_2020/Git/POO_florieanne_barbot/tp8/src/tp8/EtatIncorrectException.java</file>
-            <file>file:/D:/dut_2019_2020/Git/POO_florieanne_barbot/tp8/test/tp8/PersonneTest.java</file>
+            <file>file:/E:/florie/tp8-poo/src/tp8/Personne.java</file>
+            <file>file:/E:/florie/tp8-poo/test/tp8/VoitureTest.java</file>
+            <file>file:/E:/florie/tp8-poo/test/tp8/PersonneTest.java</file>
+            <file>file:/E:/florie/tp8-poo/src/tp8/Tp8.java</file>
         </group>
     </open-files>
 </project-private>
